@@ -8,7 +8,7 @@ export default function Home() {
     <div>
 
       <Head>
-        <h1>Blog do Arthur Dev </h1>
+        <h1>Blog do Arthur Dev &#1F601</h1>
       </Head>
 
     </div>
