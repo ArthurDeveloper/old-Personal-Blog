@@ -1,10 +1,10 @@
 export default function Page(props) {
 
     return (
-        <div>
+        <html lang="pt-br">
             <title>{props.title}</title>
             {props.children}
-        </div>
+        </html>
     )
 
 } 
