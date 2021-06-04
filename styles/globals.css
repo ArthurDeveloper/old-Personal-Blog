@@ -1,6 +1,7 @@
 /* Fontes */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* Tags e outros*/
 
@@ -26,29 +27,35 @@ a:hover {
 /* Classes */
 
 .title {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 10px;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .subtitle {
   margin-top: 15px;
   margin-left: 12px;
   color: #C0C0C0;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 .item {
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   margin-right: 15px;
   color: white;
 }
 
+.txt-align-right {
+  text-align: right;
+}
+
 /* Ids */
 
 #top-bar {
-  position: fixed top left;
-  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
   padding: 10px;
   display: inline-block;
   background-color: #03c6fc;
