@@ -9,6 +9,8 @@ import Body from '../src/components/pageComponents/Body.jsx'
 
 import Link from '../src/components/pageComponents/Link.jsx'
 
+
+
 export default function App() {
   return (
 
@@ -20,7 +22,7 @@ export default function App() {
 
           <Item>
             <Link href="/">
-                <span style={{"font-size": 1.2+"em;"}}>
+                <span style={{"fontSize": 1.2+"em"}}>
                   Arthur Dev
                 </span>
             </Link>
