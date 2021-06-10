@@ -31,7 +31,7 @@ export default function App() {
           </Item>
 
           <Item className="txt-align-right">
-            <Link href="#" className="txt-align-right">teste 2</Link>
+            <Link href="#">teste 2</Link>
           </Item>
 
         </TopBar>
