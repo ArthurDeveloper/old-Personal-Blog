@@ -9,48 +9,21 @@ import Body from '../src/components/pageComponents/Body.jsx'
 
 import Link from '../src/components/pageComponents/Link.jsx'
 
+import styles from '../src/styles/home.module.scss'
 
 
 export default function App() {
   return (
 
-    <Page title="Arthur Dev">
+    <Page>
 
-      <Head>
+      <h1 className="title">
+        Blog do Arthur Dev &#x1F601;
+      </h1>
 
-        <TopBar>
-
-          <Item>
-            <Link href="/">
-                <span style={{"fontSize": 1.2+"em"}}>
-                  Arthur Dev
-                </span>
-            </Link>
-          </Item>
-
-          <Item>
-            <Link href="#" >Teste</Link>
-          </Item>
-
-          <Item className="txt-align-right">
-            <Link href="#">teste 2</Link>
-          </Item>
-
-        </TopBar>
-
-        <h1 className="title">
-          Blog do Arthur Dev &#x1F601;
-        </h1>
-
-        <h2 className="subtitle">
-          Aqui você encontra diversos assuntos sobre programação e tecnologia em geral!
-        </h2>
-        
-      </Head>
-
-      <Body>
-        
-      </Body>
+      <h2 className="subtitle">
+        Aqui você encontra diversos assuntos sobre programação e tecnologia em geral!
+      </h2>
 
     </Page> 
 

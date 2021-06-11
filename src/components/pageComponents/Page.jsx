@@ -1,13 +1,28 @@
+import Head from 'next/head'
+import Body from './Body.jsx'
+
+import TopBar from './TopBar.jsx'
+
+import Footer from './Footer.jsx'
+
 export default function Page(props) {
 
     return (
-        <html lang="pt-br">
+        <div id="page">
+            
+            <Head>
 
-            <meta charSet="utf-8" />
+                <title>Arthur Dev</title>
 
-            <title>{props.title}</title>
-            {props.children}
-        </html>
+                <TopBar />
+                
+            </Head>
+
+            <Body>
+                {props.children}
+            </Body>
+
+        </div>
     )
 
 } 
