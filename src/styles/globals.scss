@@ -37,15 +37,15 @@ a:hover {
 }
 
 .title {
-  margin-top: 75px;
-  margin-left: 30px;
+  margin: 0;
+  margin-top: 15px;
   font-size: 4em;
 }
 
 .subtitle {
+  margin: 0;
   margin-top: 15px;
-  margin-left: 30px;
-  color: #C0C0C0;
+  color: #CCCCCC;
   font-size: 1em;
 }
 
@@ -81,3 +81,14 @@ a:hover {
 
 }
 
+.circle-radius {
+  border-radius: 100%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
