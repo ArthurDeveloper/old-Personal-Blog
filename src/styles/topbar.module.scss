@@ -1,0 +1,50 @@
+@import 'variables.module';
+
+#top-bar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    background-color: #03c6fc;
+  
+    #top-bar-items {
+      margin-right: 17px !important;
+    }
+  
+    #top-bar-title {
+      position: absolute;
+      top: 7px;
+      left: 0;
+      margin-left: 30px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2em;
+      color: $secondary-font-color;   
+    }
+  
+    .item {
+      display: inline-block;
+      margin-right: 35px;
+      margin-left: 15px;
+      font-family: 'Open Sans', sans-serif;
+      color: $secondary-font-color;
+    }
+  
+}
+
+@media (max-width: 952px) {
+    #top-bar-title {
+      margin-left: 10px !important;
+    }
+}
+  
+@media (max-width: 858px) {
+    #top-bar-title {
+      top: 10px !important;
+      font-size: 1em !important;
+    }
+    .item {
+      margin-right: 12px !important; 
+    }
+}

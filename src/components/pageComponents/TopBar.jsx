@@ -1,39 +1,41 @@
 import Link from './Link.jsx'
 import Item from './Item.jsx'
 
+import styles from '../../../src/styles/topbar.module.scss'
+
 export default function TopBar(props) {
 
     return (
 
-        <nav id="top-bar">
+        <nav id={styles['top-bar']}>
 
-            <div id="top-bar-title">
+            <div id={styles["top-bar-title"]}>
                 <Link href="/"> 
                     Arthur Dev
                 </Link>
             </div>
 
-            <ul id="top-bar-items">
+            <ul id={styles["top-bar-items"]}>
 
-                <Item className="item">
+                <Item>
                     <Link href="#">
                         Sobre
                     </Link>
                 </Item>
                 
-                <Item className="item">
+                <Item>
                     <Link href="https://github.com/arthurdeveloper" target="_blank">
                         Github
                     </Link>
                 </Item>
 
-                <Item className="item">
+                <Item>
                     <Link href="#">
                         Posts
                     </Link>
                 </Item>
 
-                <Item className="item">
+                <Item>
                     <Link href="#">
                         Portfólio
                     </Link>
