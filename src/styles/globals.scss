@@ -65,16 +65,17 @@ a:hover {
   #top-bar-title {
     position: absolute;
     top: 7px;
-    left: 0%;
+    left: 0;
     margin-left: 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    color: $secondary-font-color;
+    color: $secondary-font-color;   
   }
 
   .item {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 35px;
+    margin-left: 15px;
     font-family: 'Open Sans', sans-serif;
     color: $secondary-font-color;
   }
@@ -91,4 +92,20 @@ a:hover {
 
 .no-margin {
   margin: 0;
+}
+
+@media (max-width: 952px) {
+  #top-bar-title {
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 858px) {
+  #top-bar-title {
+    top: 10px !important;
+    font-size: 1em !important;
+  }
+  .item {
+    margin-right: 20px !important; 
+  }
 }

@@ -6,17 +6,24 @@ export default function TopBar(props) {
     return (
 
         <nav id="top-bar">
-            <ul id="top-bar-items">
 
-                <div id="top-bar-title">
-                    <Link href="#"> 
-                        Arthur Dev
-                    </Link>
-                </div>
+            <div id="top-bar-title">
+                <Link href="/"> 
+                    Arthur Dev
+                </Link>
+            </div>
+
+            <ul id="top-bar-items">
 
                 <Item className="item">
                     <Link href="#">
                         Sobre
+                    </Link>
+                </Item>
+                
+                <Item className="item">
+                    <Link href="https://github.com/arthurdeveloper" target="_blank">
+                        Github
                     </Link>
                 </Item>
 

@@ -27,8 +27,6 @@ export default function App() {
         </h2>
       </div>
 
-      
-
     </Page> 
 
   )
