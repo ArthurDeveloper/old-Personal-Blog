@@ -5,6 +5,7 @@
     justify-content: right;
     width: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
     padding: 10px;
     background-color: #03c6fc;
@@ -33,23 +34,22 @@
   
 }
 
-@media (max-width: 952px) {
+@media (max-width: 858px) {
     #top-bar-title {
       margin-left: 10px !important;
     }
 }
   
-@media (max-width: 858px) {
+@media (max-width: 576px) {
     #top-bar-title {
       margin-left: 7px !important;
       top: 10px !important;
-      font-size: 0.8em !important;
+      font-size: 1em !important;
     }
     #top-bar-items {
       margin-left: 5px !important;
     }
     .item {
-      font-size: 0.7em !important;
       margin-left: 5px !important;
       margin-right: 7px !important; 
     }
