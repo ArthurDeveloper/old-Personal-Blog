@@ -41,16 +41,15 @@
 }
   
 @media (max-width: 576px) {
-    #top-bar-title {
-      margin-left: 7px !important;
-      top: 10px !important;
-      font-size: 1em !important;
-    }
-    #top-bar-items {
-      margin-left: 5px !important;
+    #top-bar {
+      height: 30px;
     }
     .item {
+      display: none !important;
       margin-left: 5px !important;
       margin-right: 7px !important; 
+    }
+    #btn-menu {
+        display: block !important;
     }
 }
