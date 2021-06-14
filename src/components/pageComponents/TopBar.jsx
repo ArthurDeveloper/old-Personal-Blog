@@ -40,6 +40,10 @@ export default function TopBar(props) {
                         Portfólio
                     </Link>
                 </Item>
+
+                <button id="btn-menu">
+                    Menu
+                </button>
                 
             </ul>
         </nav>
