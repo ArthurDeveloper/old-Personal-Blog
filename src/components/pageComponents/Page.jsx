@@ -20,6 +20,10 @@ export default function Page(props) {
 
             <Body>
                 {props.children}
+
+                <input type="checkbox" id="dark-mode-toggle-checkbox" >
+                    
+                </input>
             </Body>
 
         </div>
