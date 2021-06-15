@@ -1,9 +1,7 @@
 @import 'variables.module';
 
 // Fontes 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 'fonts.module';
 
 
 // Seletores
@@ -32,6 +30,17 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+
+pre {
+  margin-left: 5px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .title {
   color: $primary-font-color;
   margin: 0;
@@ -53,6 +62,12 @@ a:hover {
   left: 94.5%;
 }
 
+#content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .circle-radius {
   border-radius: 100%;
