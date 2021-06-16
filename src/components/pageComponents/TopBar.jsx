@@ -18,7 +18,7 @@ export default function TopBar(props) {
             <ul id={styles["top-bar-items"]}>
 
                 <Item>
-                    <Link href="#">
+                    <Link href="/about">
                         Sobre
                     </Link>
                 </Item>
@@ -30,7 +30,7 @@ export default function TopBar(props) {
                 </Item>
 
                 <Item>
-                    <Link href="#">
+                    <Link href="/posts">
                         Posts
                     </Link>
                 </Item>

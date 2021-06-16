@@ -1,0 +1,11 @@
+#bio {
+    width: 500px;
+    color: #CCCCCC;
+    margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+    #bio {
+        width: 300px !important;
+    }
+}

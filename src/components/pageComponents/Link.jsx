@@ -1,9 +1,11 @@
+import NextLink from 'next/link'
+
 export default function Link(props) {
 
     return (
-        <a href={props.href} target={props.target}>
-            {props.children}
-        </a>
+        <NextLink href={props.href}>
+            <a>{props.children}</a>
+        </NextLink>
     )
 
 }
