@@ -8,20 +8,12 @@ export default function Portfolio(props) {
 
     const posts = props.quantity;
 
-    useEffect(() => {
-
-        if (posts == 0) {
-            const postsContainer = document.querySelector('#posts-container');
-                                    
-            postsContainer.innerHTML = "No posts";
-        }
-    })
-
     return (
 
         <Page>
 
             <div id={styles['posts-container']} style={{marginTop: "80px"}}>
+                {posts == 0 ? "No posts" : null}
                 
             </div>
 
@@ -34,7 +26,7 @@ export default function Portfolio(props) {
 
 export async function getStaticProps() {
 
-    const res = await fetch('http://localhost:3000/api/posts')
+    const res = await fetch('https://arthur-devs-blog.herokuapp.com/api/posts')
                     .then((res) => { return res.json(); })
                     
     return  {
