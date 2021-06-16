@@ -16,6 +16,10 @@ export default function App() {
 
     <Page>
 
+      <meta name="author" content="Arthur Dev" />
+      <meta name="description" content="Blog pessoal do programador Arthur Dev" />
+      <meta name="keywords" content="blog, programação, posts, tutoriais" /> 
+
       <div id={styles['profile']}>
         <img id={styles['profile-img']} className="circle-radius" src="https://github.com/arthurdeveloper.png" />
         <h1 className="title centered" style={{marginBottom: "20px"}}>

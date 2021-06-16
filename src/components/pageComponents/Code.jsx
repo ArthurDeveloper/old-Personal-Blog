@@ -6,11 +6,11 @@ export default function Code(props) {
 
     return (
         <div className={styles['code-box']}>
-            <code>
-                <pre>
+            <pre>
+                <code>
                     {props.children}
-                </pre>
-            </code>
+                </code>
+            </pre>
         </div>
     )
 
