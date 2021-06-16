@@ -26,7 +26,7 @@ export default function Portfolio(props) {
 
 export async function getStaticProps() {
 
-    const res = await fetch('https://arthur-devs-blog.herokuapp.com/api/posts')
+    const res = await fetch('https://arthur-devs-blog.herokuapp.com/api/test')
                     .then((res) => { return res.json(); })
                     
     return  {
