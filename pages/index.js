@@ -16,6 +16,19 @@ export default function App() {
 
     <Page>
 
+      <Head>
+        <title>Arthur Dev</title>
+        <meta name="author" content="Arthur Dev" />
+        <meta name="description" content="Blog pessoal do programador Arthur Dev" />
+        <meta name="keywords" content="blog, programação, posts, tutoriais" />
+        <meta property="og:title" content="Arthur Dev" />
+        <meta property="og:description" content="Blog pessoal do programador Arthur Dev" />
+        <meta property="og:url" content={"https://arthur-devs-blog.herokuapp.com"} />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" />
+        
+      </Head>
+
 
       <div id={styles['profile']}>
         <img id={styles['profile-img']} className="circle-radius" src="https://github.com/arthurdeveloper.png" alt="Foto de perfil do github"/>
