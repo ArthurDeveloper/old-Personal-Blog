@@ -13,6 +13,15 @@ export default function Page(props) {
             <Head>
 
                 <title>Arthur Dev</title>
+                <meta name="author" content="Arthur Dev" />
+                <meta name="description" content="Blog pessoal do programador Arthur Dev" />
+                <meta name="keywords" content="blog, programação, posts, tutoriais" />
+                <meta property="og:title" content="Arthur Dev" />
+                <meta property="og:description" content="Blog pessoal do programador Arthur Dev" />
+                <meta property="og:url" content={"https://arthur-devs-blog.herokuapp.com"} />
+                <meta property="og:type" content="website" />
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.ico" />
 
                 <TopBar />
                 
