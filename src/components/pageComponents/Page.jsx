@@ -9,16 +9,11 @@ export default function Page(props) {
 
     return (
         <div id="page">
-            
-            <Head>
-
-                
-
-                <TopBar />
-                
-            </Head>
 
             <Body>
+
+                <TopBar />
+
                 {props.children}
 
                 <input type="checkbox" id="dark-mode-toggle-checkbox" >
