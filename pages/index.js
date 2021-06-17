@@ -18,6 +18,7 @@ export default function App() {
 
       <Head>
         <title>Arthur Dev</title>
+        <meta name="google-site-verification" content="8ScuzwwlRf-ReiJNNvIFl8dLe9G_SmqGAiw83nnDiOM" />
         <meta name="author" content="Arthur Dev" />
         <meta name="description" content="Blog pessoal do programador Arthur Dev" />
         <meta name="keywords" content="blog, programação, posts, tutoriais" />
