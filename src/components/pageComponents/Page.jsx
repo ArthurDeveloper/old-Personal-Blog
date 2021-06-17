@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import ColorThemeChange from './ColorThemeChange.jsx'
+
 import Body from './Body.jsx'
 
 import TopBar from './TopBar.jsx'
@@ -10,18 +11,22 @@ export default function Page(props) {
     return (
         <div id="page">
 
-            <Body>
+                <body>
 
-                <TopBar />
+                    <ColorThemeChange>
 
-                {props.children}
+                        <TopBar />
 
-                <input type="checkbox" id="dark-mode-toggle-checkbox" >
-                    
-                </input>
-            </Body>
+                        {props.children}
+
+                    </ColorThemeChange>
+
+                </body>
+
+            
 
         </div>
+        
     )
 
 } 
