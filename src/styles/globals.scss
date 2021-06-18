@@ -16,11 +16,10 @@ html {
   width: 100%;
   height: 100%; 
   font-family: 'Open Sans', sans-serif;
-}
-
-body {
-  background-color: $bg-color;
-  transition: 500ms background-color ease;
+  body {
+    background-color: $bg-color;
+    transition: 500ms background-color ease;
+  }
 }
 
 a {
@@ -83,11 +82,13 @@ code {
   position: absolute;
   top: 50%;
   left: 50%;
+  // Faz com que fique por cima da overlay
+  z-index: 1000;
   transform: translate(-50%, -50%);
 }
 
 #loading-img {
-  animation: spinning 500ms infinite;
+  animation: spinning 500ms infinite linear;
 }
 
 @keyframes spinning {
@@ -97,6 +98,14 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+#overlay {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #000000B1;
 }
 
 @media (max-width: 576px) {

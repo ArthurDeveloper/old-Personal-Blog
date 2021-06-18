@@ -1,31 +1,59 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
+
+import Router from 'next/router'
 
 export default function loading() {
 
+    const [loading, setLoading] = useState(false);
+
+    Router.events.on('routeChangeStart', () => { setLoading(true); })
+    Router.events.on('routeChangeComplete', () => { setLoading(false); })
+
     useEffect(() => {
 
-        if (document.querySelector('#loading') !== null) {
-            let el = document.querySelector('#loading');
-            el.parentNode.removeChild(el);
+        // alert(loading);
+
+        if (!loading && document.querySelector('#loading') !== null) {
+            let elLoading = document.querySelector('#loading');
+            elLoading.parentNode.removeChild(elLoading);
+
+            let elOverlay = document.querySelector('#overlay');
+            elOverlay.parentNode.removeChild(elOverlay);
+
             return;
         }
 
-        const el = document.createElement('div');
+        if (loading && document.querySelector('#loading') === null) {
 
-        el.setAttribute('id', 'loading');
+            const el = document.createElement('div');
 
-        const img = document.createElement('img');
+            el.setAttribute('id', 'loading');
 
-        img.setAttribute('id', 'loading-img');
+            const img = document.createElement('img');
 
-        img.setAttribute('src', '/loading.png');
+            img.setAttribute('id', 'loading-img');
 
-        img.style.width = "30px";
+            img.setAttribute('src', '/loading.png');
 
-        el.appendChild(img);
-        
-        document.body.appendChild(el);
+            img.style.width = "30px";
 
-    })
+            // Verifica se o dark mode está ativo
+            if (localStorage.getItem("colorTheme") === 'dark') {
+                img.style.filter = "invert(100%)";
+            }
+
+            const overlay = document.createElement('div');
+
+            overlay.setAttribute('id', 'overlay');
+
+            document.body.appendChild(overlay);
+
+            el.appendChild(img);
+            
+            document.body.appendChild(el);
+
+        }
+
+    }, [loading])
 
 }

@@ -6,8 +6,6 @@ import Item from '../src/components/pageComponents/Item'
 
 import { useEffect } from 'react'
 
-import Prism from 'prismjs'
-
 import Body from '../src/components/pageComponents/Body'
 
 import Link from '../src/components/pageComponents/Link'
@@ -15,12 +13,6 @@ import Link from '../src/components/pageComponents/Link'
 import styles from '../src/styles/home.module.scss'
 
 export default function Home() {
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      Prism.highlightAll();
-    }
-  }, []);
 
   return (
 
@@ -50,6 +42,8 @@ export default function Home() {
           
         </section>
       </header>
+
+
 
     </Page> 
 

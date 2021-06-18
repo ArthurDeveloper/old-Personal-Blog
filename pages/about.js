@@ -8,8 +8,6 @@ import Code from '../src/components/pageComponents/Code.jsx'
 
 import styles from '../src/styles/about.module.scss'
 
-import codeStyles from '../src/styles/code.module.scss'
-
 export default function About(props) {
 
     return (
@@ -23,23 +21,28 @@ export default function About(props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        alignItems: "center"
-                        }}>
-                <header>
-                    <h1 className="title centered" style={{marginTop: "80px", width: "500px"}}>
-                        Sobre
-                    </h1>
-                </header>
+            <div>
+                <div style={{
+                            position: "absolute",
+                            left: "50%",
+                            transform: "translateX(-50%)",
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center"
+                            }}>
+                    <header>
+                        <h1 className="title centered" style={{marginTop: "80px", width: "500px"}}>
+                            Sobre
+                        </h1>
+                    </header>
 
-                <p id={styles['bio']}>
-                    Olá! Meu nome é Arthur, sou programador principalmente de web e jogos,
-                    mas às vezes tento programar outras coisas também.  
-                </p>
+                    <p id={styles['bio']}>
+                        Olá! Meu nome é Arthur, sou programador principalmente de web e jogos,
+                        mas às vezes tento programar outras coisas também.  
+                    </p>
 
+                </div>
             </div>
         </Page>
     )
