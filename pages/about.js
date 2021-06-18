@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import Head from 'next/head'
 
 import Page from '../src/components/pageComponents/Page.jsx'
@@ -37,43 +39,6 @@ export default function About(props) {
                     Olá! Meu nome é Arthur, sou programador principalmente de web e jogos,
                     mas às vezes tento programar outras coisas também.  
                 </p>
-
-                {/* Depois lembrar de fazer um syntax highlighting dinâmico */}
-
-                <Code>
-                    <span className={codeStyles['reserved-word']}>
-                        const</span> technologies <span className={codeStyles['operator']}>
-                        = 
-                    </span> <span className={codeStyles['operator']}>
-                        [
-                    </span>
-                    <span className={codeStyles['string']}>
-                        'Javascript'
-                    </span> <span className={codeStyles['operator']}>
-                        ,
-                    </span> <span className={codeStyles['string']}>
-                        'React'
-                    </span> <span className={codeStyles['operator']}>
-                        ,
-                    </span> <span className={codeStyles['string']}>
-                        'Next'
-                    </span> <span className={codeStyles['operator']}>
-                        ,
-                    </span> <span className={codeStyles['string']}>
-                        'Sass'
-                    </span> <span className={codeStyles['operator']}>
-                        ,
-                    </span> <span className={codeStyles['string']}>
-                        'Construct 3'
-                    </span> <span className={codeStyles['operator']}>
-                        ,
-                    </span> <span className={codeStyles['string']}>
-                        '...'
-                    </span>
-                    <span className={codeStyles['operator']}>
-                        ]
-                    </span> 
-                </Code>
 
             </div>
         </Page>

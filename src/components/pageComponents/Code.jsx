@@ -6,7 +6,7 @@ export default function Code(props) {
 
     return (
         <div className={styles['code-box']}>
-            <pre>
+            <pre className="language-javascript">
                 <code>
                     {props.children}
                 </code>

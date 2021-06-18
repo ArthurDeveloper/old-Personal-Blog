@@ -5,7 +5,6 @@ export default function ColorThemeChange(props) {
     const [colorTheme, setColorTheme] = useState('light');
 
     useEffect(() => {
-        // alert('aaa');
         setColorTheme(localStorage.getItem('colorTheme'));
     }, [])
 

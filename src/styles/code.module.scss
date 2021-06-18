@@ -26,3 +26,12 @@
 .string {
     color: #bde052;
 }
+
+@media (max-width: 576px) {
+    .code {
+        width: 200px;
+    }
+    .code-box {
+        height: 200px;
+    }
+}

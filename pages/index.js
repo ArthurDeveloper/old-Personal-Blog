@@ -4,13 +4,23 @@ import Page from '../src/components/pageComponents/Page'
 import TopBar from '../src/components/pageComponents/TopBar'
 import Item from '../src/components/pageComponents/Item'
 
+import { useEffect } from 'react'
+
+import Prism from 'prismjs'
+
 import Body from '../src/components/pageComponents/Body'
 
 import Link from '../src/components/pageComponents/Link'
 
 import styles from '../src/styles/home.module.scss'
 
-export default function App() {
+export default function Home() {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      Prism.highlightAll();
+    }
+  }, []);
 
   return (
 
@@ -30,14 +40,13 @@ export default function App() {
         <section id={styles['profile']}>
           <img id={styles['profile-img']} className="circle-radius" src="https://github.com/arthurdeveloper.png" alt="Foto de perfil do github"/>
 
-          
-            <h1 className="title centered" style={{marginBottom: "20px"}}>
-              Arthur Dev
-            </h1>
+          <h1 className="title centered" style={{marginBottom: "20px"}}>
+            Arthur Dev
+          </h1>
 
-            <h2 className="subtitle centered">
-              Desenvolvedor web e games
-            </h2>
+          <h2 className="subtitle centered">
+            Desenvolvedor web e games
+          </h2>
           
         </section>
       </header>
