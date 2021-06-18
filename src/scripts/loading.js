@@ -11,14 +11,19 @@ export default function loading() {
 
     useEffect(() => {
 
-        // alert(loading);
-
         if (!loading && document.querySelector('#loading') !== null) {
-            let elLoading = document.querySelector('#loading');
-            elLoading.parentNode.removeChild(elLoading);
+            
+            window.setTimeout(() => {
+                let elLoading = document.querySelector('#loading');
+                if (elLoading !== null) {
+                    elLoading.parentNode.removeChild(elLoading);
+                }
 
-            let elOverlay = document.querySelector('#overlay');
-            elOverlay.parentNode.removeChild(elOverlay);
+                let elOverlay = document.querySelector('#overlay');
+                if (elOverlay !== null) {
+                    elOverlay.parentNode.removeChild(elOverlay);
+                }
+            }, 200);
 
             return;
         }
