@@ -11,19 +11,13 @@ export default function Page(props) {
     return (
         <div id="page">
 
-                <body>
+            <ColorThemeChange>
 
-                    <ColorThemeChange>
+                <TopBar />
 
-                        <TopBar />
+                {props.children}
 
-                        {props.children}
-
-                    </ColorThemeChange>
-
-                </body>
-
-            
+            </ColorThemeChange>
 
         </div>
         

@@ -21,7 +21,12 @@ export default function About(props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div id="content">
+            <div style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center"
+                        }}>
                 <header>
                     <h1 className="title centered" style={{marginTop: "80px", width: "500px"}}>
                         Sobre
